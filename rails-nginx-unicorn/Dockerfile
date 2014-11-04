@@ -2,6 +2,7 @@ FROM seapy/ruby:2.1.2
 MAINTAINER ChangHoon Jeong <iamseapy@gmail.com>
 
 # Intall software-properties-common for add-apt-repository
+RUN apt-get update
 RUN apt-get install -qq -y software-properties-common
 
 # Install Nginx.
